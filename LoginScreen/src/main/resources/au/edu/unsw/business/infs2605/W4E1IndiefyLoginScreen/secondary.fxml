@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="au.edu.unsw.business.infs2605.W4E1IndiefyLoginScreen.SecondaryController">
+   <children>
+      <Label fx:id="welcome" layoutX="227.0" layoutY="33.0" text="Welcome to Indiefy">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="97.0" text="Here are your favourite tracks:" />
+      <Label fx:id="welcome1" layoutX="240.0" layoutY="59.0" prefHeight="20.0" prefWidth="122.0" text="Jane Doe z1234567">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox layoutY="-2.0" prefHeight="26.0" prefWidth="600.0">
+         <children>
+            <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Favourites" />
+            <Button mnemonicParsing="false" onAction="#handleNavigationDisplay" prefHeight="25.0" prefWidth="80.0" text="Display" />
+         </children>
+      </HBox>
+      <TableView layoutX="50.0" layoutY="124.0" prefHeight="200.0" prefWidth="465.0">
+        <columns>
+          <TableColumn prefWidth="153.0" text="Supplier Name" />
+          <TableColumn minWidth="0.0" prefWidth="161.0" text="Phone Number" />
+            <TableColumn prefWidth="150.0" text="Address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
